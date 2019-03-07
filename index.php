@@ -15,11 +15,17 @@ and open the template in the editor.
         <?php
             $saludo="Mundo Variable";       
             echo "Hola Mundo !2";
+            echo "<br>";
             echo "Hola ".$saludo;
         ?>
         <br>
         
         <?php
+            /*
+             * Declaración de valores de un arreglo, luego recorrer arreglo con foreach
+             * 
+             */
+        
             $meses["enero"]="verano";
             $meses["febrero"]="verano";
             $meses["marzo"]="verano/otoño";
@@ -34,7 +40,7 @@ and open the template in the editor.
             $meses["diciembre"]="primavera/verano";
             
             foreach($meses as $varmeses){
-                print " Valor actual de \$meses : $varmeses. \n ";
+                print " Valor actual de \$meses : $varmeses. \n <br>";
                 
             }
           
