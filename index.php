@@ -10,9 +10,32 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        Texto sin programación 
+        [Texto directo a la pagina, sin programación ]
+        
+        <br>
+        
+        <?php
+         require 'html.php';
+        ?>
+       
+        <?php 
+        /* Acabo de crear una funcion de PHP llamada foo() */
+        function foo(){    
+        echo "Ahora estoy llamando el include desde una funcion ! :D ";
+        include 'codigoinclude.php';        
+        }
+        
+        ?>        
+        <br>
+        
+        <?php
+        echo "PHP llamado directo con include !";
+        include 'codigoinclude.php';
+        ?>
+        
         <br>
         <?php
+            /* Esto es codigo */
             $saludo="Mundo Variable";       
             echo "Hola Mundo !2";
             echo "<br>";
@@ -20,10 +43,19 @@ and open the template in the editor.
         ?>
         <br>
         
+        
+        <?php 
+        echo "Uso de la funcion foo !";        
+        foo();
+        ?>
+        
         <?php
             /*
              * Declaración de valores de un arreglo, luego recorrer arreglo con foreach
-             * 
+             *  en este caso, el arreglo se llama $meses, y los meses que 
+             * aparecen en corchetes, son los indices del arreglo
+             * luego, se realiza un foreach, que aloja en una varible temporal el contenido del
+             * arreglo, según cada ciclo de iteración
              */
         
             $meses["enero"]="verano";
@@ -62,6 +94,7 @@ and open the template in the editor.
         */
         ?>
         </pre>
+        
         
         
     </body>
