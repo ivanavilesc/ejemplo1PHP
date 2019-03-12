@@ -8,6 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         [Texto directo a la pagina, sin programación ]
@@ -93,6 +94,13 @@ and open the template in the editor.
         Texto comentado
         */
         ?>
+
+        <div class="parrafo2">
+            <?php
+            echo $var;
+            ?>
+        </div>
+        <p id="parrafo1">ADIOOOOOOOOOOOOS !!!!</p>
         </pre>
         
         

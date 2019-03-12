@@ -1,6 +1,11 @@
 <div></div>
 <br>
-<div>Mensaje desde html.php</div>
+<div style="font-size: 20px; color: green; background: yellow"> Mensaje desde html.php</div>   
+<div class="parrafo1">Segundo Texto</div>
+<div class="parrafo2">Tercer Texto</div>
+<p id="parrafo1"></p>
+<p id="parrafo2"></p>
+
 <div>
     <?php
     /**
